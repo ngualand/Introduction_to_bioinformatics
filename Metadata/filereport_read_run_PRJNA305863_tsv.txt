@@ -1,0 +1,5 @@
+study_accession	run_accession	scientific_name	instrument_platform	instrument_model	library_layout	library_strategy	library_source	library_selection	read_count	base_count	center_name	sample_title	Group
+PRJNA305863	SRR2993055	Homo sapiens	ILLUMINA	Illumina HiSeq 2000	PAIRED	RNA-Seq	TRANSCRIPTOMIC	cDNA	25092168	5018433600	GEO	RNA-seq_Control_rep1	CTRL
+PRJNA305863	SRR2993056	Homo sapiens	ILLUMINA	Illumina HiSeq 2000	PAIRED	RNA-Seq	TRANSCRIPTOMIC	cDNA	25956702	5191340400	GEO	RNA-seq_H2O2_rep1	H2O2
+PRJNA305863	SRR2993058	Homo sapiens	ILLUMINA	Illumina HiSeq 2000	PAIRED	RNA-Seq	TRANSCRIPTOMIC	cDNA	23684111	4736822200	GEO	RNA-seq_H2O2_rep2	H2O2
+PRJNA305863	SRR2993057	Homo sapiens	ILLUMINA	Illumina HiSeq 2000	PAIRED	RNA-Seq	TRANSCRIPTOMIC	cDNA	23796138	4759227600	GEO	RNA-seq_Control_rep2	CTRL
