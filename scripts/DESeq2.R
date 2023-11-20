@@ -43,6 +43,7 @@ vsd = varianceStabilizingTransformation(dds, blind = T)
 plotCounts(dds, gene=which.min(res$padj), intgroup="Group")
 
 # Create a heatmap of the top differentially expressed genes
+library(pheatmap)
 sampleDists <- dist(t(assay(vsd)))
 library("RColorBrewer")
 sampleDistMatrix <- as.matrix(sampleDists)
@@ -76,7 +77,7 @@ down.genes = res.genes[res.genes$log2FoldChange < 0 & res.genes$padj < 0.1 & !is
 library(gprofiler2)
 #Upregulated
 gene_list <- unlist(lapply(up.genes$Row.names, function(x) unlist(strsplit(x, "\\."))[1]))
-background = unlist(lapply(rownames(res.genes), function(x) unlist(strsplit(x, "\\."))[1]))
+background = unlist(lapply(res.genes$Row.names, function(x) unlist(strsplit(x, "\\."))[1]))
 
 # Specify the organism and database you want to use
 organism = "hsapiens"  # Human
