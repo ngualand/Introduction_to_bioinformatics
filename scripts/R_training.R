@@ -1,4 +1,6 @@
 # Exercise 1: Loading the Dataset
+install.packages("BiocManager")
+BiocManager::install("Biobase")
 library(Biobase)
 data(package = "Biobase")
 data("geneData")
